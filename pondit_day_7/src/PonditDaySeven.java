@@ -2,6 +2,7 @@
 * Local variable and instance variable.
 * String isn't a keyword. It's a class.
 * default value of instance variables
+* in boolean, you have to assign true or false. not 0 or 1.
 * you can't access non-static variable from a static method.
 * Array fixed length
 * Multidimension array
@@ -9,6 +10,8 @@
 * basic diff between C n Java.
 * datatype details
 * Array details
+* Primitive data types - includes byte, short, int, long, float, double, boolean and char = total 8 ta
+* Non-primitive data types - such as String, Arrays and Classes.
 * */
 public class PonditDaySeven {
 
@@ -26,6 +29,8 @@ public class PonditDaySeven {
 
         // These are Local variable. It doesn't have default value. You must have to assign value after declaration.
         boolean isCompleted = true;
+        boolean isTested = 1; // wrong. Either true or false. Neither 0 nor 1.
+
         int num;
         String String = "Hello World";  // Here String is used as a variable. Bcoz it's a class not keyword.
         // String int = "int is a keyword. So it can't be variableName.";
