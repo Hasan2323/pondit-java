@@ -1,3 +1,7 @@
+// if you add/multiply two byte, it will be an integer. ex: byte +/* byte = int
+// and, short +/* short = int and int +/* int = int. here / means or.
+// so if anyone wants to add/multiply 2 byte/short type values, then he needs to write return type int or higher than int.
+
 public class DataType {
 
     public static void main(String[] args) {
@@ -14,7 +18,16 @@ public class DataType {
         String str = "this is a string";
         // String objects are immutable, which means that once created, their values cannot be changed.
 
-
+        int num5 = 999999999;
+        int num6 = 999999999;
+        byte b1 = 9;
+        byte b2 = 4;
+        byte b3 = b1 * b2; // error
+        long re = num5 * num6;
+        // one of the disadvantage of Java, you can't find out many errors in compile time.
+        // for example, ekhane long re = num5 * num6; ai line kono error dekhaschena in compile time.
+        // but If I run, this won't give me the proper answer. Big problem.
+        System.out.println(re);
 
     }
 
