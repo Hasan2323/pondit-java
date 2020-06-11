@@ -5,7 +5,7 @@
 * in boolean, you have to assign true or false. not 0 or 1.
 * you can't access non-static variable from a static method.
 * Array fixed length
-* Multidimension array
+* MultiDimension array
 * mutable vs immutable
 * basic diff between C n Java.
 * datatype details
