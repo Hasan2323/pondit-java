@@ -26,18 +26,15 @@ public class InstanceOfWhichClassAndSuperMethod /* extends Object */ {
 
     public void doAction(Object obj) {
         System.out.println("obj is a object of \"" + obj.getClass() + "\"");
-        System.out.println(obj.getClass());
-        String className = obj.getClass().toString();
-        String onlyClassName = className.substring(6);
 
         if (obj instanceof Hasan) {
             Hasan objHasan = (Hasan) obj;
-            System.out.println("Birthday of " + onlyClassName + ": " + objHasan.getDay() + "," + objHasan.getMonth());
+            System.out.println("Birthday of " + obj.getClass().getName() + ": " + objHasan.getDay() + "," + objHasan.getMonth());
         }
 
         if (obj instanceof Mishu) {
             Mishu objMishu = (Mishu) obj;
-            System.out.println("Birthday of " + onlyClassName + ": " + objMishu.getDay() + "," + objMishu.getMonth());
+            System.out.println("Birthday of " + obj.getClass().getName() + ": " + objMishu.getDay() + "," + objMishu.getMonth());
         }
 
 
