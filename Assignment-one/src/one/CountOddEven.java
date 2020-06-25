@@ -28,9 +28,14 @@ public class CountOddEven {
             System.out.println("Total even number count: " + evenCount);
             System.out.println("Total odd number count: " + oddCount);
             System.out.print("The even numbers between " + start + " and " + end + " are: ");
-            for (Integer evenNumber : evenNumbers) {
-                System.out.print(evenNumber + ", ");
-            }
+
+            evenNumbers.forEach(evenNumber -> {
+                String comma = (evenNumber == end || evenNumber + 1 == end) ? "" : ", ";
+                System.out.print(evenNumber + comma);
+            });
+//            for (Integer evenNumber : evenNumbers) {
+//                System.out.print(evenNumber + ", ");
+//            }
             System.out.println();
         }
 
