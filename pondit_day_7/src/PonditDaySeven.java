@@ -11,6 +11,7 @@
 * datatype details
 * Array details
 * Primitive data types - includes byte, short, int, long, float, double, boolean and char = total 8 ta
+*     -> Primitive data types are the core feature of Java
 * Non-primitive data types - such as String, Arrays and Classes.
 * */
 public class PonditDaySeven {
@@ -96,7 +97,7 @@ public class PonditDaySeven {
         * sout(nam); print Hasan
         * here in next assign into nam variable, it doesn't actually replace previous num variable in memory.
         * it creates a new space in memory for nam = "hasan".
-        * in next, when Garbage collector works, it collects as garbage those unused variable like nam = "saimon".
+        * Later, when Garbage collector works, it collects as garbage those unused variable like nam = "saimon".
         *
         *
         * Int is mutable. "Mutable int" does the reverse. It override/replace value in memory.
