@@ -1,4 +1,4 @@
-package four;
+package four.singleClass;
 
 import java.util.Scanner;
 

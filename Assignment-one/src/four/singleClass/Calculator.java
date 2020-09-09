@@ -1,4 +1,4 @@
-package four;
+package four.singleClass;
 
 import java.util.Scanner;
 
@@ -50,19 +50,19 @@ class Runner {
             System.out.print("Input Second number: ");
             num2 = sc.nextDouble();
 
-            Execution execution = new Execution();
+            Calculator calculate = new Execution();
 
             switch (operator) {
                 case '+':
-                    result = execution.addition(num1, num2);
+                    result = calculate.addition(num1, num2);
                     break;
 
                 case '-':
-                    result = execution.subtraction(num1, num2);
+                    result = calculate.subtraction(num1, num2);
                     break;
 
                 case '*':
-                    result = execution.multiplication(num1, num2);
+                    result = calculate.multiplication(num1, num2);
                     break;
 
                 case '/':
@@ -70,7 +70,7 @@ class Runner {
                         System.out.println("For division, divisor must be greater than 0");
                         return;
                     }
-                    result = execution.division(num1, num2);
+                    result = calculate.division(num1, num2);
                     break;
 
                 default:

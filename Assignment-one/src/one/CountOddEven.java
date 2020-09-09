@@ -9,12 +9,16 @@ public class CountOddEven {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Starting number: ");
         int start = sc.nextInt(), evenCount = 0;
+
         System.out.print("Enter Ending number: ");
         int end = sc.nextInt(), oddCount = 0;
+
         List<Integer> evenNumbers = new ArrayList<>();
 
         if (start < 0 || end < 0) {
-            System.out.println("Number must not be negative!");
+            System.err.println("Number must not be negative!");
+        } else if (end <= start) {
+            System.err.println("EndNumber must be greater than StartNumber.");
         } else {
             for (int i = start; i <= end; i++) {
                 if (i % 2 == 0) {
