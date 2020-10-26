@@ -19,6 +19,12 @@ public class Runner {
 
         System.out.println(customListC.getData());
 
+        System.out.println("##############");
+
+        System.out.println(CustomList.genericMethodSingleParameter("hasan"));
+        System.out.println(CustomList.genericMethodDoubleParameter("Abid", 12));
+        System.out.println(CustomList.genericMethod(100, 12.50));
+
 
     }
 }
