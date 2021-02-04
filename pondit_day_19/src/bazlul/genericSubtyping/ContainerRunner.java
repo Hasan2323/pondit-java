@@ -37,5 +37,14 @@ public class ContainerRunner {
         System.out.println("\nPrint All by For loop");
         salary.printAllByFor();
 
+        System.out.println("\n###################################");
+
+
+//        Container<String> stringContainer = new Container<>();
+//        Container<Object> objectContainer = stringContainer; // this line produces Error.
+//        objectContainer.addItem(new Object());
+
+
+
     }
 }
